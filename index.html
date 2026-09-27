@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Planejamento de viagens rodoviárias e estimativa de custos.">
+  <title>Trip Calculator</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard" data-page="dashboard">
+        <span class="brand-mark">TC</span>
+        <span>trip<span>calculator</span></span>
+      </a>
+      <p class="sidebar-caption">Planeje melhor. Viaje leve.</p>
+      <nav aria-label="Navegação principal">
+        <button class="nav-link active" data-page="dashboard">Dashboard</button>
+        <button class="nav-link" data-page="new">Nova viagem</button>
+        <button class="nav-link" data-page="history">Histórico</button>
+      </nav>
+      <p class="sidebar-footer">HTML · CSS · JAVASCRIPT<br>API REST / JSON</p>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <span class="eyebrow">TRIP CALCULATOR / VANILLA</span>
+          <h1 id="page-title">Seu mapa começa aqui.</h1>
+        </div>
+        <time id="current-date"></time>
+      </header>
+
+      <div id="notice" class="notice" hidden>
+        <span id="notice-text"></span>
+        <button id="close-notice" type="button" aria-label="Fechar aviso">×</button>
+      </div>
+
+      <div id="view"></div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
